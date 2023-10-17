@@ -21,7 +21,17 @@ a {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+.fixed-header {
+	padding-top: 26px;
+	position: sticky;
+	top: -26px;
+	z-index: 100;
+	background-color: #E6F0FF;
+}
 .header{
+	display: flex;
+	position: relative;
+	flex-direction: column;
 	background: #E6F0FF;
 	width: 100vw;
 	height: 100vh;
@@ -50,7 +60,7 @@ a {
 .navbar {
 	display: flex;
 	align-items: center;
-	padding-top: 38px;
+	padding: 12px 0px;
 }
 .navbar ul {
 	display: flex;
